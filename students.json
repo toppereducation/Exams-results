@@ -1,6 +1,6 @@
 {
   "0021": {
-    "name": "Ali Khan",
+    "name": "Muhammad Shahzaib",
     "father": "Ahmed Khan",
     "subjects": {
       "Math": [85, 100],
@@ -18,3 +18,4 @@
     }
   }
 }
+
