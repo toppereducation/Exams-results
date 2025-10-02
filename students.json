@@ -1,0 +1,24 @@
+[
+  {
+    "id": "0021",
+    "name": "Haseeb Heider",
+    "fatherName": "Shahzad Naseem",
+    "class": "7th",
+    "subjects": [
+      { "name": "Math", "totalMarks": 100, "marksObtained": 98 },
+      { "name": "English", "totalMarks": 100, "marksObtained": 78 },
+      { "name": "Science", "totalMarks": 100, "marksObtained": 90 }
+    ]
+  },
+  {
+    "id": "0022",
+    "name": "Minahil Fatima",
+    "fatherName": "Shahzad Naseem",
+    "class": "5th",
+    "subjects": [
+      { "name": "Math", "totalMarks": 100, "marksObtained": 70 },
+      { "name": "English", "totalMarks": 100, "marksObtained": 65 },
+      { "name": "Science", "totalMarks": 100, "marksObtained": 80 }
+    ]
+  }
+]
