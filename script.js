@@ -1,79 +1,51 @@
-async function searchStudent() {
-    const id = document.getElementById("studentId").value;
-    const response = await fetch("students.json");
-    const students = await response.json();
+async function checkResult() {
+  const id = document.getElementById("admissionId").value.trim();
+  const container = document.getElementById("studentData");
 
-    const student = students.find(s => s.id === id);
+  try {
+    const response = await fetch("students.json"); // load JSON
+    const results = await response.json();
 
-    const detailsDiv = document.getElementById("studentDetails");
-    const printBtn = document.getElementById("printBtn");
-
+    const student = results[id];
     if (student) {
-        // Calculate totals
-        let totalMarks = 0, obtainedMarks = 0;
+      let totalObt = 0, totalMax = 0;
+      let table = `<h3>${student.name} (ID: ${id})</h3>
+                   <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                   <tr style="background:#007acc; color:white;">
+                     <th>Subject</th><th>Obtained</th><th>Total</th>
+                     <th>Percentage</th><th>Grade</th>
+                   </tr>`;
+      
+      for (let sub in student.subjects) {
+        let [obt, max] = student.subjects[sub];
+        totalObt += obt; 
+        totalMax += max;
+        let percent = ((obt / max) * 100).toFixed(1);
+        let grade = percent >= 80 ? "A" : percent >= 60 ? "B" : percent >= 40 ? "C" : "F";
 
-        // Helper to get grade based on %
-        function getGrade(percentage) {
-            if (percentage >= 90) return { grade: "A+", remarks: "Pass" };
-            if (percentage >= 80) return { grade: "A", remarks: "Pass" };
-            if (percentage >= 70) return { grade: "B", remarks: "Pass" };
-            if (percentage >= 60) return { grade: "C", remarks: "Pass" };
-            if (percentage >= 50) return { grade: "D", remarks: "Pass" };
-            return { grade: "F", remarks: "Fail" };
-        }
-
-        // Build subjects table
-        let subjectsTable = `
-            <table border="1" cellspacing="0" cellpadding="5">
-                <tr>
-                    <th>Subject</th>
-                    <th>Total Marks</th>
-                    <th>Marks Obtained</th>
-                    <th>Percentage</th>
-                    <th>Grade</th>
-                </tr>
-        `;
-
-        student.subjects.forEach(sub => {
-            totalMarks += sub.totalMarks;
-            obtainedMarks += sub.marksObtained;
-
-            let subPercentage = ((sub.marksObtained / sub.totalMarks) * 100).toFixed(2);
-            let { grade } = getGrade(subPercentage);
-
-            subjectsTable += `
-                <tr>
-                    <td>${sub.name}</td>
-                    <td>${sub.totalMarks}</td>
-                    <td>${sub.marksObtained}</td>
-                    <td>${subPercentage}%</td>
+        table += `<tr>
+                    <td>${sub}</td>
+                    <td>${obt}</td>
+                    <td>${max}</td>
+                    <td>${percent}%</td>
                     <td>${grade}</td>
-                </tr>
-            `;
-        });
+                  </tr>`;
+      }
 
-        subjectsTable += `</table>`;
+      let overall = ((totalObt / totalMax) * 100).toFixed(1);
+      let remarks = overall >= 40 ? "Pass ✅" : "Fail ❌";
 
-        // Overall percentage, grade, remarks
-        const percentage = ((obtainedMarks / totalMarks) * 100).toFixed(2);
-        const { grade, remarks } = getGrade(percentage);
-
-        // Show student details
-        detailsDiv.innerHTML = `
-            <h2>${student.name} (ID: ${student.id})</h2>
-            <p><strong>Father Name:</strong> ${student.fatherName}</p>
-            <p><strong>Class:</strong> ${student.class}</p>
-            ${subjectsTable}
-            <p><strong>Total Marks:</strong> ${totalMarks}</p>
-            <p><strong>Marks Obtained:</strong> ${obtainedMarks}</p>
-            <p><strong>Percentage:</strong> ${percentage}%</p>
-            <p><strong>Grade:</strong> ${grade}</p>
-            <p><strong>Remarks:</strong> ${remarks}</p>
-        `;
-
-        printBtn.style.display = "block";
+      table += `</table>
+                <h3>Total Obtained: ${totalObt}</h3>
+                <h3>Total Marks: ${totalMax}</h3>
+                <h3>Overall Percentage: ${overall}%</h3>
+                <h3>Remarks: ${remarks}</h3>`;
+      container.innerHTML = table;
     } else {
-        detailsDiv.innerHTML = '<p style="color:red;">Student not found</p>';
-        printBtn.style.display = "none";
+      container.innerHTML = `<p style="color:red; text-align:center;">⚠️ No record found for ID: ${id}</p>`;
     }
+  } catch (err) {
+    container.innerHTML = `<p style="color:red;">⚠️ Error loading data.</p>`;
+    console.error(err);
+  }
 }
