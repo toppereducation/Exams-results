@@ -1,24 +1,20 @@
-[
-  {
-    "id": "0021",
-    "name": "Haseeb Heider",
-    "fatherName": "Shahzad Naseem",
-    "class": "7th",
-    "subjects": [
-      { "name": "Math", "totalMarks": 100, "marksObtained": 98 },
-      { "name": "English", "totalMarks": 100, "marksObtained": 78 },
-      { "name": "Science", "totalMarks": 100, "marksObtained": 90 }
-    ]
+{
+  "0021": {
+    "name": "Ali Khan",
+    "father": "Ahmed Khan",
+    "subjects": {
+      "Math": [85, 100],
+      "English": [78, 100],
+      "Science": [92, 100]
+    }
   },
-  {
-    "id": "0022",
-    "name": "Minahil Fatima",
-    "fatherName": "Shahzad Naseem",
-    "class": "5th",
-    "subjects": [
-      { "name": "Math", "totalMarks": 100, "marksObtained": 70 },
-      { "name": "English", "totalMarks": 100, "marksObtained": 65 },
-      { "name": "Science", "totalMarks": 100, "marksObtained": 80 }
-    ]
+  "0022": {
+    "name": "Ayesha Malik",
+    "father": "Malik Usman",
+    "subjects": {
+      "Math": [66, 100],
+      "English": [70, 100],
+      "Science": [80, 100]
+    }
   }
-]
+}
