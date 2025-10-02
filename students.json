@@ -1,16 +1,18 @@
 {
   "0021": {
     "name": "Muhammad Shahzaib",
-    "father": "Ahmed Khan",
+    "father": "Khadam Hussein",
+    "class": "6th",
     "subjects": {
-      "Math": [85, 100],
-      "English": [78, 100],
+      "Math": [59, 75],
+      "English": [64, 75],
       "Science": [92, 100]
     }
   },
   "0022": {
     "name": "Ayesha Malik",
     "father": "Malik Usman",
+    "class": "4th",
     "subjects": {
       "Math": [66, 100],
       "English": [70, 100],
@@ -18,4 +20,5 @@
     }
   }
 }
+
 
