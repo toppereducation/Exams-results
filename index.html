@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Fee Management</title>
+  <title>Exam Results</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body><div class="THE TOPPER EDUCATION S/S">
-  <img src="logo.png" alt="School Logo" class="school-logo">
-  <h1 class="Topper Education">Topper Education</h1>
-</div>
-
-  <h1>Exam Results 2025</h1>
+<body>
+  <h1>🏫 Topper Education School</h1>
   
-  <div class="search-box">
-    <label for="studentId">Enter Student ID:</label>
-    <input type="text" id="studentId" placeholder="e.g. 101">
-    <button onclick="searchStudent()">Search</button>
+  <div class="box">
+    <h2>Check Your Result</h2>
+    <input type="text" id="admissionId" placeholder="Enter Admission ID">
+    <br>
+    <button onclick="checkResult()">Check Result</button>
   </div>
 
-  <div id="studentDetails"></div>
-  <button id="printBtn" style="display:none;" onclick="window.print()">Print Voucher</button>
+  <!-- This is where result will appear -->
+  <div id="studentData"></div>
 
+  <!-- ✅ Make sure this is last -->
   <script src="script.js"></script>
 </body>
 </html>
