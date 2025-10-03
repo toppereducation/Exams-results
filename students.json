@@ -2,12 +2,23 @@
   {
     "id": "0021",
     "name": "Muhammad Shahzaib",
-    "fatherName": "Mr. Ahmed Khan",
+    "fatherName": "Abdul Hameed",
     "class": "8th",
     "subjects": [
       { "name": "Math", "obtained": 59, "total": 75 },
       { "name": "English", "obtained": 64, "total": 75 },
       { "name": "Science", "obtained": 92, "total": 100 }
+    ]
+  },
+  {
+    "id": "0022",
+    "name": "Ali Raza",
+    "fatherName": "Ghulam Rasool",
+    "class": "8th",
+    "subjects": [
+      { "name": "Math", "obtained": 70, "total": 75 },
+      { "name": "English", "obtained": 60, "total": 75 },
+      { "name": "Science", "obtained": 85, "total": 100 }
     ]
   }
 ]
