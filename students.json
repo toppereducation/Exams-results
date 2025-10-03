@@ -1,24 +1,13 @@
-{
-  "0021": {
+[
+  {
+    "id": "0021",
     "name": "Muhammad Shahzaib",
-    "father": "Khadam Hussein",
-    "class": "6th",
-    "subjects": {
-      "Math": [59, 75],
-      "English": [64, 75],
-      "Science": [92, 100]
-    }
-  },
-  "0022": {
-    "name": "Ayesha Malik",
-    "father": "Malik Usman",
-    "class": "4th",
-    "subjects": {
-      "Math": [66, 100],
-      "English": [70, 100],
-      "Science": [80, 100]
-    }
+    "fatherName": "Mr. Ahmed Khan",
+    "class": "8th",
+    "subjects": [
+      { "name": "Math", "obtained": 59, "total": 75 },
+      { "name": "English", "obtained": 64, "total": 75 },
+      { "name": "Science", "obtained": 92, "total": 100 }
+    ]
   }
-}
-
-
+]
