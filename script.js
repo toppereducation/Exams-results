@@ -53,8 +53,8 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
 
                 // ✅ Display Result
                 resultDiv.innerHTML = `
-                    <h2>Topper Education School</h2>
-                    <h3>Exam Results 2025</h3>
+                    <h2 style="color:white; text-shadow:1px 1px 2px black;">Topper Education School</h2>
+                    <h3 style="color:white; text-shadow:1px 1px 2px black;">Exam Results 2025</h3>
                     <p><strong>Name:</strong> ${student.name}</p>
                     <p><strong>Father's Name:</strong> ${student.fatherName}</p>
                     <p><strong>Class:</strong> ${student.class}</p>
