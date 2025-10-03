@@ -10,7 +10,6 @@
       {"name": "Science", "obtained": 85, "total": 100, "grade": "A"}
     ],
     "totalObtained": 215,
-    "totalMarks": 250,
-    "percentage": 86.0
+    "totalMarks": 250
   }
 ]
