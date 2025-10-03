@@ -39,8 +39,10 @@ async function checkResult() {
 
       subjectsHTML += "</table>";
 
-      // Calculate overall percentage & remarks
-      const overallPercentage = ((student.totalObtained / student.totalMarks) * 100).toFixed(1);
+      // ✅ Fix overall percentage calculation
+      const totalObtained = student.totalObtained || 0;
+      const totalMarks = student.totalMarks || 1; // avoid division by zero
+      const overallPercentage = ((totalObtained / totalMarks) * 100).toFixed(1);
       const overallRemarks = overallPercentage >= 33 ? "Pass" : "Fail";
 
       resultDiv.innerHTML = `
@@ -50,8 +52,8 @@ async function checkResult() {
         <p><b>Father's Name:</b> ${student.fatherName}</p>
         <p><b>Class:</b> ${student.class}</p>
         ${subjectsHTML}
-        <p><b>Total Obtained:</b> ${student.totalObtained}</p>
-        <p><b>Total Marks:</b> ${student.totalMarks}</p>
+        <p><b>Total Obtained:</b> ${totalObtained}</p>
+        <p><b>Total Marks:</b> ${totalMarks}</p>
         <p><b>Overall Percentage:</b> ${overallPercentage}%</p>
         <p><b>Remarks:</b> ${overallRemarks}</p>
       `;
