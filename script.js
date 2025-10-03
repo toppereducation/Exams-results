@@ -1,67 +1,85 @@
-async function checkResult() {
-  const admissionId = document.getElementById("admissionId").value.trim();
-  const resultDiv = document.getElementById("result");
+document.getElementById("resultForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  if (!admissionId) {
-    resultDiv.innerHTML = `<p class="error">Please enter an Admission ID.</p>`;
-    return;
-  }
+    const admissionId = document.getElementById("admissionId").value.trim();
+    const resultDiv = document.getElementById("result");
 
-  try {
-    const response = await fetch("students.json");
-    const students = await response.json();
+    fetch("students.json")
+        .then(response => response.json())
+        .then(data => {
+            const student = data.find(std => std.admissionId === admissionId);
 
-    const student = students.find(s => s.id === admissionId);
+            if (student) {
+                let subjectsHTML = "";
+                let totalMarks = 0;
+                let totalObtained = 0;
 
-    if (student) {
-      let subjectsHTML = `
-        <table border="1" cellspacing="0" cellpadding="5" style="margin:10px auto; border-collapse: collapse; width: 100%;">
-          <tr>
-            <th>Subject</th>
-            <th>Obtained</th>
-            <th>Total</th>
-            <th>Percentage</th>
-            <th>Grade</th>
-          </tr>
-      `;
+                student.subjects.forEach(subject => {
+                    totalMarks += subject.total;
+                    totalObtained += subject.marks;
 
-      student.subjects.forEach(sub => {
-        const percentage = ((sub.obtained / sub.total) * 100).toFixed(1);
-        subjectsHTML += `
-          <tr>
-            <td>${sub.name}</td>
-            <td>${sub.obtained}</td>
-            <td>${sub.total}</td>
-            <td>${percentage}%</td>
-            <td>${sub.grade}</td>
-          </tr>`;
-      });
+                    const percentage = ((subject.marks / subject.total) * 100).toFixed(1);
+                    let grade = "";
+                    if (percentage >= 90) grade = "A+";
+                    else if (percentage >= 80) grade = "A";
+                    else if (percentage >= 70) grade = "B";
+                    else if (percentage >= 60) grade = "C";
+                    else if (percentage >= 50) grade = "D";
+                    else grade = "F";
 
-      subjectsHTML += "</table>";
+                    subjectsHTML += `
+                        <tr>
+                            <td>${subject.name}</td>
+                            <td>${subject.marks}</td>
+                            <td>${subject.total}</td>
+                            <td>${percentage}%</td>
+                            <td>${grade}</td>
+                        </tr>
+                    `;
+                });
 
-      // ✅ Fix overall percentage calculation
-      const totalObtained = student.totalObtained || 0;
-      const totalMarks = student.totalMarks || 1; // avoid division by zero
-      const overallPercentage = ((totalObtained / totalMarks) * 100).toFixed(1);
-      const overallRemarks = overallPercentage >= 33 ? "Pass" : "Fail";
+                // ✅ Calculate overall percentage & grade
+                const overallPercentage = ((totalObtained / totalMarks) * 100).toFixed(1);
 
-      resultDiv.innerHTML = `
-        <h2>🏫 Topper Education School</h2>
-        <h3>Exam Results 2025</h3>
-        <p><b>Name:</b> ${student.name}</p>
-        <p><b>Father's Name:</b> ${student.fatherName}</p>
-        <p><b>Class:</b> ${student.class}</p>
-        ${subjectsHTML}
-        <p><b>Total Obtained:</b> ${totalObtained}</p>
-        <p><b>Total Marks:</b> ${totalMarks}</p>
-        <p><b>Overall Percentage:</b> ${overallPercentage}%</p>
-        <p><b>Remarks:</b> ${overallRemarks}</p>
-      `;
-    } else {
-      resultDiv.innerHTML = `<p class="error">No record found for this Admission ID.</p>`;
-    }
-  } catch (error) {
-    resultDiv.innerHTML = `<p class="error">Error loading results. Please try again.</p>`;
-    console.error(error);
-  }
-}
+                let overallGrade = "";
+                if (overallPercentage >= 90) overallGrade = "A+";
+                else if (overallPercentage >= 80) overallGrade = "A";
+                else if (overallPercentage >= 70) overallGrade = "B";
+                else if (overallPercentage >= 60) overallGrade = "C";
+                else if (overallPercentage >= 50) overallGrade = "D";
+                else overallGrade = "F";
+
+                const remarks = (overallGrade === "F") ? "Fail" : "Pass";
+
+                // ✅ Display Result
+                resultDiv.innerHTML = `
+                    <h2>Topper Education School</h2>
+                    <h3>Exam Results 2025</h3>
+                    <p><strong>Name:</strong> ${student.name}</p>
+                    <p><strong>Father's Name:</strong> ${student.fatherName}</p>
+                    <p><strong>Class:</strong> ${student.class}</p>
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Obtained Marks</th>
+                            <th>Total Marks</th>
+                            <th>Percentage</th>
+                            <th>Grade</th>
+                        </tr>
+                        ${subjectsHTML}
+                    </table>
+                    <p><strong>Total Marks:</strong> ${totalMarks}</p>
+                    <p><strong>Total Obtained:</strong> ${totalObtained}</p>
+                    <p><strong>Overall Percentage:</strong> ${overallPercentage}%</p>
+                    <p><strong>Overall Grade:</strong> ${overallGrade}</p>
+                    <p><strong>Remarks:</strong> ${remarks}</p>
+                `;
+            } else {
+                resultDiv.innerHTML = `<p style="color:red;">Result not found for Admission ID ${admissionId}</p>`;
+            }
+        })
+        .catch(error => {
+            console.error("Error loading student data:", error);
+            resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
+        });
+});
