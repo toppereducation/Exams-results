@@ -1,72 +1,70 @@
-document.getElementById("checkResult").addEventListener("click", function () {
-    const studentId = document.getElementById("studentId").value;
-    const resultDiv = document.getElementById("result");
+document.getElementById("checkBtn").addEventListener("click", function () {
+    const id = document.getElementById("studentId").value.trim();
+    const resultContainer = document.getElementById("result");
 
     fetch("students.json")
         .then(response => response.json())
         .then(data => {
-            const student = data.find(s => s.id === studentId);
+            const student = data.find(s => s.id === id);
 
-            if (student) {
-                // Student info (name, father name, class)
-                let resultHTML = `
-                    <h3>${student.name} (ID: ${student.id})</h3>
-                    <p><strong>Father's Name:</strong> ${student.fatherName}</p>
-                    <p><strong>Class:</strong> ${student.class}</p>
-                    <table border="1" cellpadding="5" cellspacing="0">
-                        <tr>
-                            <th>Subject</th>
-                            <th>Obtained</th>
-                            <th>Total</th>
-                            <th>Percentage</th>
-                            <th>Grade</th>
-                        </tr>
-                `;
-
-                let totalObtained = 0;
-                let totalMarks = 0;
-
-                student.subjects.forEach(subject => {
-                    totalObtained += subject.obtained;
-                    totalMarks += subject.total;
-                    const percentage = ((subject.obtained / subject.total) * 100).toFixed(1);
-
-                    let grade = "";
-                    if (percentage >= 80) grade = "A";
-                    else if (percentage >= 70) grade = "B";
-                    else if (percentage >= 60) grade = "C";
-                    else if (percentage >= 50) grade = "D";
-                    else grade = "F";
-
-                    resultHTML += `
-                        <tr>
-                            <td>${subject.name}</td>
-                            <td>${subject.obtained}</td>
-                            <td>${subject.total}</td>
-                            <td>${percentage}%</td>
-                            <td>${grade}</td>
-                        </tr>
-                    `;
-                });
-
-                const overallPercentage = ((totalObtained / totalMarks) * 100).toFixed(1);
-                const remarks = overallPercentage >= 50 ? "Pass ✅" : "Fail ❌";
-
-                resultHTML += `
-                    </table>
-                    <p><strong>Total Obtained:</strong> ${totalObtained}</p>
-                    <p><strong>Total Marks:</strong> ${totalMarks}</p>
-                    <p><strong>Overall Percentage:</strong> ${overallPercentage}%</p>
-                    <p><strong>Remarks:</strong> ${remarks}</p>
-                `;
-
-                resultDiv.innerHTML = resultHTML;
-            } else {
-                resultDiv.innerHTML = "<p style='color:red;'>Student not found!</p>";
+            if (!student) {
+                resultContainer.innerHTML = `<p style="color:red;">Result not found for ID: ${id}</p>`;
+                return;
             }
+
+            // Student info
+            let output = `
+                <h3>${student.name} (ID: ${student.id})</h3>
+                <p><strong>Father's Name:</strong> ${student.fatherName}</p>
+                <p><strong>Class:</strong> ${student.class}</p>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Obtained</th>
+                        <th>Total</th>
+                        <th>Percentage</th>
+                        <th>Grade</th>
+                    </tr>
+            `;
+
+            let totalObtained = 0, totalMarks = 0;
+            student.subjects.forEach(sub => {
+                totalObtained += sub.obtained;
+                totalMarks += sub.total;
+                let percent = ((sub.obtained / sub.total) * 100).toFixed(1);
+                let grade =
+                    percent >= 90 ? "A+" :
+                    percent >= 80 ? "A" :
+                    percent >= 70 ? "B" :
+                    percent >= 60 ? "C" :
+                    percent >= 50 ? "D" : "F";
+
+                output += `
+                    <tr>
+                        <td>${sub.name}</td>
+                        <td>${sub.obtained}</td>
+                        <td>${sub.total}</td>
+                        <td>${percent}%</td>
+                        <td>${grade}</td>
+                    </tr>
+                `;
+            });
+
+            let overallPercent = ((totalObtained / totalMarks) * 100).toFixed(1);
+            let remarks = overallPercent >= 50 ? "Pass ✅" : "Fail ❌";
+
+            output += `
+                </table>
+                <p><strong>Total Obtained:</strong> ${totalObtained}</p>
+                <p><strong>Total Marks:</strong> ${totalMarks}</p>
+                <p><strong>Overall Percentage:</strong> ${overallPercent}%</p>
+                <p><strong>Remarks:</strong> ${remarks}</p>
+            `;
+
+            resultContainer.innerHTML = output;
         })
         .catch(error => {
-            console.error("Error fetching student data:", error);
-            resultDiv.innerHTML = "<p style='color:red;'>Error loading data!</p>";
+            resultContainer.innerHTML = `<p style="color:red;">Error loading data</p>`;
+            console.error(error);
         });
 });
