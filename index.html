@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exam Results</title>
+  <title>Exam Results 2025 - Topper Education School</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- School Logo -->
-    <img src="logo.png" alt="School Logo" class="school-logo">
-
-    <!-- Main Heading -->
-    <h1>Topper Education School</h1>
-    <h2>Exam Results 2025</h2>
-
-    <!-- Result Form -->
-    <div class="result-box">
-      <h3>Check Your Result</h3>
-      <input type="text" id="admissionId" placeholder="Enter Admission ID">
-      <button onclick="checkResult()">Check Result</button>
-    </div>
-
-    <!-- Result Display -->
-    <div id="result"></div>
+  <!-- Header Section -->
+  <div class="header">
+    <img src="me.jpg" alt="School Logo" style="width:90px; margin-bottom:10px;">
+    <h1 class="school-name">Topper Education School</h1>
+    <h2 class="exam-title">Exam Results 2025</h2>
   </div>
+
+  <!-- Search Box -->
+  <div id="searchBox">
+    <h3>Check Your Result</h3>
+    <input type="text" id="admissionId" placeholder="Enter Admission ID">
+    <button onclick="checkResult()">Check Result</button>
+  </div>
+
+  <!-- Result Display -->
+  <div id="result"></div>
 
   <script src="script.js"></script>
 </body>
