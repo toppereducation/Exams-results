@@ -1,70 +1,36 @@
-document.getElementById("checkBtn").addEventListener("click", function () {
-    const id = document.getElementById("studentId").value.trim();
-    const resultContainer = document.getElementById("result");
+async function getResult() {
+  const admissionId = document.getElementById("admissionId").value.trim();
+  const resultDiv = document.getElementById("result");
 
-    fetch("students.json")
-        .then(response => response.json())
-        .then(data => {
-            const student = data.find(s => s.id === id);
+  // Clear previous result
+  resultDiv.innerHTML = "";
 
-            if (!student) {
-                resultContainer.innerHTML = `<p style="color:red;">Result not found for ID: ${id}</p>`;
-                return;
-            }
+  if (admissionId === "") {
+    resultDiv.innerHTML = "<p style='color:red;'>Please enter Admission ID.</p>";
+    return;
+  }
 
-            // Student info
-            let output = `
-                <h3>${student.name} (ID: ${student.id})</h3>
-                <p><strong>Father's Name:</strong> ${student.fatherName}</p>
-                <p><strong>Class:</strong> ${student.class}</p>
-                <table border="1" cellspacing="0" cellpadding="5">
-                    <tr>
-                        <th>Subject</th>
-                        <th>Obtained</th>
-                        <th>Total</th>
-                        <th>Percentage</th>
-                        <th>Grade</th>
-                    </tr>
-            `;
+  try {
+    const response = await fetch("students.json");
+    const students = await response.json();
 
-            let totalObtained = 0, totalMarks = 0;
-            student.subjects.forEach(sub => {
-                totalObtained += sub.obtained;
-                totalMarks += sub.total;
-                let percent = ((sub.obtained / sub.total) * 100).toFixed(1);
-                let grade =
-                    percent >= 90 ? "A+" :
-                    percent >= 80 ? "A" :
-                    percent >= 70 ? "B" :
-                    percent >= 60 ? "C" :
-                    percent >= 50 ? "D" : "F";
+    const student = students.find(s => s.admissionId === admissionId);
 
-                output += `
-                    <tr>
-                        <td>${sub.name}</td>
-                        <td>${sub.obtained}</td>
-                        <td>${sub.total}</td>
-                        <td>${percent}%</td>
-                        <td>${grade}</td>
-                    </tr>
-                `;
-            });
-
-            let overallPercent = ((totalObtained / totalMarks) * 100).toFixed(1);
-            let remarks = overallPercent >= 50 ? "Pass ✅" : "Fail ❌";
-
-            output += `
-                </table>
-                <p><strong>Total Obtained:</strong> ${totalObtained}</p>
-                <p><strong>Total Marks:</strong> ${totalMarks}</p>
-                <p><strong>Overall Percentage:</strong> ${overallPercent}%</p>
-                <p><strong>Remarks:</strong> ${remarks}</p>
-            `;
-
-            resultContainer.innerHTML = output;
-        })
-        .catch(error => {
-            resultContainer.innerHTML = `<p style="color:red;">Error loading data</p>`;
-            console.error(error);
-        });
-});
+    if (student) {
+      // Show student result
+      resultDiv.innerHTML = `
+        <h2>${student.name}</h2>
+        <p><strong>Admission ID:</strong> ${student.admissionId}</p>
+        <p><strong>Class:</strong> ${student.class}</p>
+        <p><strong>Total Marks:</strong> ${student.totalMarks}</p>
+        <p><strong>Grade:</strong> ${student.grade}</p>
+        <p><strong>Remarks:</strong> ${student.remarks}</p>
+      `;
+    } else {
+      resultDiv.innerHTML = "<p style='color:red;'>No record found for this Admission ID.</p>";
+    }
+  } catch (error) {
+    console.error("Error loading student data:", error);
+    resultDiv.innerHTML = "<p style='color:red;'>Unable to load student data.</p>";
+  }
+}
