@@ -1,13 +1,16 @@
 [
   {
     "admissionId": "0021",
-    "name": "Ali Khan",
-    "fatherName": "Ahmed Khan",
-    "class": "8th",
+    "name": "Haseeb Haider",
+    "fatherName": "Shahzad Naseem",
+    "class": "7th",
     "subjects": [
-      { "name": "Math", "marks": 85, "total": 100 },
-      { "name": "Science", "marks": 78, "total": 100 },
-      { "name": "English", "marks": 90, "total": 100 }
+      { "name": "Math", "marks": 65, "total": 75 },
+      { "name": "Science", "marks": 59, "total": 75 },
+      { "name": "English", "marks": 90, "total": 75 },
+      { "name": "Urdu", "marks": 71, "total": 75 },
+      { "name": "Islamiat", "marks": 61, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 56, "total": 75 }
     ]
   },
   {
@@ -22,3 +25,4 @@
     ]
   }
 ]
+
