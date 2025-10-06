@@ -1,17 +1,24 @@
 [
   {
-    "id": "0001",
-    "name": "Shanawer Bibi",
-    "fatherName": "Rasheed Ahmad",
-    "class": "7th",
+    "admissionId": "0021",
+    "name": "Ali Khan",
+    "fatherName": "Ahmed Khan",
+    "class": "8th",
     "subjects": [
-      { "name": "English", "obtained": 58, "total": 75 },
-      { "name": "Islamiat", "obtained": 52, "total": 75 },
-      { "name": "Urdu", "obtained": 60, "total": 75 },
-      { "name": "Maths", "obtained": 66, "total": 75 },
-      { "name": "Science", "obtained": 71, "total": 75 },
-      { "name": "Geography", "obtained": 59, "total": 75 },
-      { "name": "Tarjuma Al Quran", "obtained": 48, "total": 75 }
+      { "name": "Math", "marks": 85, "total": 100 },
+      { "name": "Science", "marks": 78, "total": 100 },
+      { "name": "English", "marks": 90, "total": 100 }
+    ]
+  },
+  {
+    "admissionId": "0022",
+    "name": "Sara Malik",
+    "fatherName": "Imran Malik",
+    "class": "9th",
+    "subjects": [
+      { "name": "Math", "marks": 70, "total": 100 },
+      { "name": "Science", "marks": 65, "total": 100 },
+      { "name": "English", "marks": 80, "total": 100 }
     ]
   }
 ]
