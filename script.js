@@ -25,9 +25,10 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           else if (percentage >= 70) grade = "B";
           else if (percentage >= 60) grade = "C";
           else if (percentage >= 50) grade = "D";
+          else if (percentage >= 40) grade = "E";
           else grade = "F";
 
-          // 👇 Remarks will now show Pass or Fail
+          // ✅ Pass for A+ to E, Fail for F
           const remark = (grade === "F") ? "Fail" : "Pass";
 
           subjectsHTML += `
@@ -49,6 +50,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
         else if (overallPercentage >= 70) overallGrade = "B";
         else if (overallPercentage >= 60) overallGrade = "C";
         else if (overallPercentage >= 50) overallGrade = "D";
+        else if (overallPercentage >= 40) overallGrade = "E";
         else overallGrade = "F";
 
         const remarks = (overallGrade === "F") ? "Fail" : "Pass";
