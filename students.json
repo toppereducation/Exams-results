@@ -8,16 +8,131 @@
       { "name": "English", "marks": 66, "total": 75 },
       { "name": "Urdu", "marks": 60, "total": 75 },
       { "name": "Mathematics", "marks": 44, "total": 50 },
-      { "name": "Art & Craft", "marks": 21, "total": 25 },
       { "name": "G.K & M.T", "marks": 21, "total": 25 },
+      { "name": "Art & Craft", "marks": 21, "total": 25 },
       { "name": "Summer Task", "marks": 20, "total": 25 }
     ]
-  }
-]
+  },
+  {
+    "admissionId": "0020",
+    "name": "Muhammad Azaan",
+    "fatherName": "Muhammad Naveed",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": 61, "total": 75 },
+      { "name": "Urdu", "marks": 61, "total": 75 },
+      { "name": "Mathematics", "marks": 42, "total": 50 },
+      { "name": "G.K & M.T", "marks": 23, "total": 25 },
+      { "name": "Art & Craft", "marks": 22, "total": 25 },
+      { "name": "Summer Task", "marks": 20, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0012",
+    "name": "Muhammad Saad",
+    "fatherName": "Barjees Tahir",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": 58, "total": 75 },
+      { "name": "Urdu", "marks": 57, "total": 75 },
+      { "name": "Mathematics", "marks": 35, "total": 50 },
+      { "name": "G.K & M.T", "marks": 22, "total": 25 },
+      { "name": "Art & Craft", "marks": 22, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0006",
+    "name": "Noman Haider",
+    "fatherName": "Tasawer Iqbal",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": 69, "total": 75 },
+      { "name": "Urdu", "marks": 64, "total": 75 },
+      { "name": "Mathematics", "marks": 43, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Art & Craft", "marks": 23, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0017",
+    "name": "Zeeshan Haider",
+    "fatherName": "Ali Raza",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": 69, "total": 75 },
+      { "name": "Urdu", "marks": 63, "total": 75 },
+      { "name": "Mathematics", "marks": 43, "total": 50 },
+      { "name": "G.K & M.T", "marks": 22, "total": 25 },
+      { "name": "Art & Craft", "marks": 23, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "",
+    "name": "",
+    "fatherName": "",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": , "total": 75 },
+      { "name": "Urdu", "marks": , "total": 75 },
+      { "name": "Mathematics", "marks": , "total": 50 },
+      { "name": "G.K & M.T", "marks": , "total": 25 },
+      { "name": "Art & Craft", "marks": , "total": 25 },
+      { "name": "Summer Task", "marks": , "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "",
+    "name": "",
+    "fatherName": "",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": , "total": 75 },
+      { "name": "Urdu", "marks": , "total": 75 },
+      { "name": "Mathematics", "marks": , "total": 50 },
+      { "name": "G.K & M.T", "marks": , "total": 25 },
+      { "name": "Art & Craft", "marks": , "total": 25 },
+      { "name": "Summer Task", "marks": , "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "",
+    "name": "",
+    "fatherName": "",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": , "total": 75 },
+      { "name": "Urdu", "marks": , "total": 75 },
+      { "name": "Mathematics", "marks": , "total": 50 },
+      { "name": "G.K & M.T", "marks": , "total": 25 },
+      { "name": "Art & Craft", "marks": , "total": 25 },
+      { "name": "Summer Task", "marks": , "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "",
+    "name": "",
+    "fatherName": "",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": , "total": 75 },
+      { "name": "Urdu", "marks": , "total": 75 },
+      { "name": "Mathematics", "marks": , "total": 50 },
+      { "name": "G.K & M.T", "marks": , "total": 25 },
+      { "name": "Art & Craft", "marks": , "total": 25 },
+      { "name": "Summer Task", "marks": , "total": 25 }
+    ]
+  },
+  
+    
+
   
   
 
   
+
 
 
 
