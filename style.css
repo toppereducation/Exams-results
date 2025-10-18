@@ -61,19 +61,23 @@ button:hover {
 }
 
 table {
-  width: 40%;
+  width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  table-layout: auto;
+  word-wrap: break-world;
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 th, td {
-  padding: 8px;
+  padding: 10px;
   text-align: center;
+  font-size: 1rem;
 }
+
 
 
 
