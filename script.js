@@ -27,6 +27,8 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           else if (percentage >= 50) grade = "D";
           else grade = "F";
 
+          const remark = (grade === "F") ? "Needs Improvement" : "Good";
+
           subjectsHTML += `
             <tr>
               <td>${subject.name}</td>
@@ -34,19 +36,18 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
               <td>${subject.marks}</td>
               <td>${percentage}%</td>
               <td>${grade}</td>
+              <td>${remark}</td>
             </tr>
           `;
         });
 
         const overallPercentage = ((totalObtained / totalMarks) * 100).toFixed(1);
-
         let overallGrade = "";
         if (overallPercentage >= 90) overallGrade = "A+";
         else if (overallPercentage >= 80) overallGrade = "A";
         else if (overallPercentage >= 70) overallGrade = "B";
         else if (overallPercentage >= 60) overallGrade = "C";
         else if (overallPercentage >= 50) overallGrade = "D";
-        else if (overallPercentage >= 40) overallGrade = "E";
         else overallGrade = "F";
 
         const remarks = (overallGrade === "F") ? "Fail" : "Pass";
@@ -84,9 +85,3 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
-
-
-
-
-
-
