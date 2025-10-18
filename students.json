@@ -68,63 +68,10 @@
       { "name": "Art & Craft", "marks": 23, "total": 25 },
       { "name": "Summer Task", "marks": 24, "total": 25 }
     ]
-  },
-  {
-    "admissionId": "",
-    "name": "",
-    "fatherName": "",
-    "class": "Foundation",
-    "subjects": [
-      { "name": "English", "marks": , "total": 75 },
-      { "name": "Urdu", "marks": , "total": 75 },
-      { "name": "Mathematics", "marks": , "total": 50 },
-      { "name": "G.K & M.T", "marks": , "total": 25 },
-      { "name": "Art & Craft", "marks": , "total": 25 },
-      { "name": "Summer Task", "marks": , "total": 25 }
-    ]
-  },
-  {
-    "admissionId": "",
-    "name": "",
-    "fatherName": "",
-    "class": "Foundation",
-    "subjects": [
-      { "name": "English", "marks": , "total": 75 },
-      { "name": "Urdu", "marks": , "total": 75 },
-      { "name": "Mathematics", "marks": , "total": 50 },
-      { "name": "G.K & M.T", "marks": , "total": 25 },
-      { "name": "Art & Craft", "marks": , "total": 25 },
-      { "name": "Summer Task", "marks": , "total": 25 }
-    ]
-  },
-  {
-    "admissionId": "",
-    "name": "",
-    "fatherName": "",
-    "class": "Foundation",
-    "subjects": [
-      { "name": "English", "marks": , "total": 75 },
-      { "name": "Urdu", "marks": , "total": 75 },
-      { "name": "Mathematics", "marks": , "total": 50 },
-      { "name": "G.K & M.T", "marks": , "total": 25 },
-      { "name": "Art & Craft", "marks": , "total": 25 },
-      { "name": "Summer Task", "marks": , "total": 25 }
-    ]
-  },
-  {
-    "admissionId": "",
-    "name": "",
-    "fatherName": "",
-    "class": "Foundation",
-    "subjects": [
-      { "name": "English", "marks": , "total": 75 },
-      { "name": "Urdu", "marks": , "total": 75 },
-      { "name": "Mathematics", "marks": , "total": 50 },
-      { "name": "G.K & M.T", "marks": , "total": 25 },
-      { "name": "Art & Craft", "marks": , "total": 25 },
-      { "name": "Summer Task", "marks": , "total": 25 }
-    ]
-  },
+  }
+]
+ 
+    
   
     
 
@@ -132,6 +79,7 @@
   
 
   
+
 
 
 
