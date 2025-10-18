@@ -1,54 +1,36 @@
 [
   {
-    "admissionId": "0021",
-    "name": "Haseeb Haider",
-    "fatherName": "Shahzad Naseem",
-    "class": "7th",
+    "admissionId": "0005",
+    "name": "Muhammad Farhan",
+    "fatherName": "Ghulam Abbas",
+    "class": "Foundation",
     "subjects": [
-      { "name": "Math", "marks": 65, "total": 75 },
-      { "name": "Science", "marks": 59, "total": 75 },
       { "name": "English", "marks": 66, "total": 75 },
-      { "name": "Urdu", "marks": 71, "total": 75 },
-      { "name": "Islamiat", "marks": 61, "total": 75 },
-      { "name": "Tarjuma Al Quran", "marks": 56, "total": 75 }
+      { "name": "Urdu", "marks": 60, "total": 75 },
+      { "name": "Mathematics", "marks": 44, "total": 50 },
+      { "name": "Art & Craft", "marks": 21, "total": 25 },
+      { "name": "G.K & M.T", "marks": 21, "total": 25 }
+      { "name": "Summer Task", "marks": 20, "total": 25 }
     ]
   },
   {
-    "admissionId": "0022",
-    "name": "Sara Malik",
-    "fatherName": "Imran Malik",
-    "class": "9th",
+    "admissionId": "0005",
+    "name": "Muhammad Farhan",
+    "fatherName": "Ghulam Abbas",
+    "class": "Foundation",
     "subjects": [
-      { "name": "Math", "marks": 70, "total": 100 },
-      { "name": "Science", "marks": 65, "total": 100 },
-      { "name": "English", "marks": 80, "total": 100 }
+      { "name": "English", "marks": 66, "total": 75 },
+      { "name": "Urdu", "marks": 60, "total": 75 },
+      { "name": "Mathematics", "marks": 44, "total": 50 },
+      { "name": "Art & Craft", "marks": 21, "total": 25 },
+      { "name": "G.K & M.T", "marks": 21, "total": 25 }
+      { "name": "Summer Task", "marks": 20, "total": 25 }
     ]
   },
-{
-  "admissionId": "0023",
-    "name": "Ahsan Tanveer",
-    "fatherName": "Mohammad Tanveer",
-    "class": "5th",
-    "subjects": [
-      { "name": "Math", "marks": 70, "total": 75 },
-      { "name": "Science", "marks": 65, "total": 75 },
-      { "name": "English", "marks": 60, "total": 75 }
-    ]
-},
-  {
-    "admissionId": "0024",
-    "name": "Anaya Fatima",
-    "fatherName": "Dilawar Butt",
-    "class": "2nd",
-    "subjects": [
-      { "name": "Math", "marks": 41, "total": 50 },
-      { "name": "Science", "marks": 44, "total": 50 },
-      { "name": "English", "marks": 45, "total": 50 }
-    ]
-  }
-]
+  
   
 
   
+
 
 
