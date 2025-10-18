@@ -27,7 +27,8 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           else if (percentage >= 50) grade = "D";
           else grade = "F";
 
-          const remark = (grade === "F") ? "Needs Improvement" : "Good";
+          // 👇 Remarks will now show Pass or Fail
+          const remark = (grade === "F") ? "Fail" : "Pass";
 
           subjectsHTML += `
             <tr>
