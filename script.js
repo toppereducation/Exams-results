@@ -46,6 +46,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
         else if (overallPercentage >= 70) overallGrade = "B";
         else if (overallPercentage >= 60) overallGrade = "C";
         else if (overallPercentage >= 50) overallGrade = "D";
+        else if (overallPercentage >= 40) overallGrade = "E";
         else overallGrade = "F";
 
         const remarks = (overallGrade === "F") ? "Fail" : "Pass";
@@ -59,10 +60,11 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           <table>
             <tr>
               <th>Subject</th>
-              <th>Obtained Marks</th>
               <th>Total Marks</th>
+              <th>Obtained Marks</th>
               <th>Percentage</th>
               <th>Grade</th>
+              <th>Remarks</th>
             </tr>
             ${subjectsHTML}
           </table>
@@ -82,6 +84,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
+
 
 
 
