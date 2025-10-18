@@ -220,7 +220,7 @@
       { "name": "Mathematics", "marks": 39, "total": 50 },
       { "name": "G.K & M.T", "marks": 20, "total": 25 },
       { "name": "Art & Craft", "marks": 21, "total": 25 },
-      { "name": "Summer Task", "marks": 00, "total": 25 }
+      { "name": "Summer Task", "marks": 0, "total": 25 }
     ]
   }
 ]
@@ -234,6 +234,7 @@
   
 
   
+
 
 
 
