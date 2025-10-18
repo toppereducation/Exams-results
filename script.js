@@ -30,8 +30,8 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           subjectsHTML += `
             <tr>
               <td>${subject.name}</td>
-              <td>${subject.marks}</td>
               <td>${subject.total}</td>
+              <td>${subject.marks}</td>
               <td>${percentage}%</td>
               <td>${grade}</td>
             </tr>
@@ -82,6 +82,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
+
 
 
 
