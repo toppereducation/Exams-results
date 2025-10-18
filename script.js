@@ -4,7 +4,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
   const admissionId = document.getElementById("admissionId").value.trim();
   const resultDiv = document.getElementById("result");
 
-  fetch('./students.json')
+  fetch('https://raw.githubusercontent.com/toppereducation/Exams-results/refs/heads/main/students.json')
     .then(response => response.json())
     .then(data => {
       const student = data.find(std => std.admissionId === admissionId);
@@ -82,4 +82,5 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
+
 
