@@ -107,3 +107,4 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
+
