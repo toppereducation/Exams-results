@@ -54,7 +54,7 @@ button:hover {
 
 #result {
   margin-top: 25px;
-  color: black;
+  color: white;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -81,6 +81,7 @@ th, td {
   padding: 10px;
   text-align: center;
 }
+
 
 
 
