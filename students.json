@@ -684,21 +684,6 @@
       { "name": "Summer Task", "marks": 24, "total": 25 }
     ]
   },
- {
-    "admissionId": "00",
-    "name": "",
-    "fatherName": "",
-    "class": "Five",
-    "subjects": [
-      { "name": "English", "marks": , "total": 75 },
-      { "name": "Urdu", "marks": , "total": 75 },
-      { "name": "Mathematics", "marks": , "total": 75 },
-      { "name": "Tarjuma Al Quran", "marks": , "total": 25 },
-      { "name": "Science", "marks": , "total": 75 },
-      { "name": "Islamiat", "marks": , "total": 75 },
-      { "name": "Summer Task", "marks": , "total": 25 }
-    ]
-  },
    {
     "admissionId": "0048",
     "name": "Adan Fatima",
@@ -882,4 +867,5 @@
 ]
   
   
+
 
