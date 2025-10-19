@@ -28,7 +28,6 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           else if (percentage >= 40) grade = "E";
           else grade = "F";
 
-          // ✅ Pass for A+ to E, Fail for F
           const remark = (grade === "F") ? "Fail" : "Pass";
 
           subjectsHTML += `
@@ -79,6 +78,30 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           <p><strong>Overall Grade:</strong> ${overallGrade}</p>
           <p><strong>Remarks:</strong> ${remarks}</p>
         `;
+
+        // 🎉 Fireworks and Congrats for Topper
+        if (student.name === "Manahil Fatima") {
+          resultDiv.innerHTML += `
+            <div id="congrats" style="font-size: 2em; color: green; margin-top: 20px;">
+              🎉 Congratulations ${student.name}! You are the Topper! 🎉
+            </div>
+          `;
+
+          const container = document.body;
+          const fireworks = new Fireworks(container, { 
+            rocketsPoint: 50,
+            speed: 3,
+            acceleration: 1.05,
+            friction: 0.95,
+            gravity: 1.5,
+            particles: 100,
+            trace: 3,
+            explosion: 5
+          });
+          fireworks.start();
+          setTimeout(() => fireworks.stop(), 10000); // Stop after 10 seconds
+        }
+
       } else {
         resultDiv.innerHTML = `<p style="color:red;">Result not found for Admission ID ${admissionId}</p>`;
       }
@@ -88,5 +111,3 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
-
-
