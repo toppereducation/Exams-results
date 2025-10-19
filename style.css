@@ -64,7 +64,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-  table-layout: insize;
+  table-layout: auto;
   word-wrap: break-word;
 }
 
@@ -76,6 +76,7 @@ th, td {
   padding: 10px;
   text-align: center;
 }
+
 
 
 
