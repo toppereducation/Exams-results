@@ -222,5 +222,272 @@
       { "name": "Art & Craft", "marks": 21, "total": 25 },
       { "name": "Summer Task", "marks": 0, "total": 25 }
     ]
-  }
-]
+  },
+  {
+    "admissionId": "0013",
+    "name": "Muhammad Musa",
+    "fatherName": "Baber Riaz",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 61, "total": 75 },
+      { "name": "Urdu", "marks": 65, "total": 75 },
+      { "name": "Mathematics", "marks": 43, "total": 50 },
+      { "name": "G.K & M.T", "marks": 20, "total": 25 },
+      { "name": "Art & Craft", "marks": 0, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0043",
+    "name": "Harram Imran",
+    "fatherName": "Shahid Imran",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 63, "total": 75 },
+      { "name": "Urdu", "marks": 64, "total": 75 },
+      { "name": "Mathematics", "marks": 45, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Art & Craft", "marks": 22, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0044",
+    "name": "Aiza Imran",
+    "fatherName": "Shahid Imran",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 63, "total": 75 },
+      { "name": "Urdu", "marks": 66, "total": 75 },
+      { "name": "Mathematics", "marks": 46, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Art & Craft", "marks": 22, "total": 25 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0046",
+    "name": "Shahzain Mukhtar",
+    "fatherName": "Mukhtar Ahmed",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 68, "total": 75 },
+      { "name": "Urdu", "marks": 72, "total": 75 },
+      { "name": "Mathematics", "marks": 43, "total": 50 },
+      { "name": "G.K & M.T", "marks": 24, "total": 25 },
+      { "name": "Art & Craft", "marks": 22, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0050",
+    "name": "Salahuddin",
+    "fatherName": "Ghulam Abbbas",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 66, "total": 75 },
+      { "name": "Urdu", "marks": 65, "total": 75 },
+      { "name": "Mathematics", "marks": 50, "total": 50 },
+      { "name": "G.K & M.T", "marks": 24, "total": 25 },
+      { "name": "Art & Craft", "marks": 20, "total": 25 },
+      { "name": "Summer Task", "marks": 21, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0051",
+    "name": "Seerat Fatima",
+    "fatherName": "Muhammad Arshad",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 67, "total": 75 },
+      { "name": "Urdu", "marks": 69, "total": 75 },
+      { "name": "Mathematics", "marks": 48, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Art & Craft", "marks": 21, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0061",
+    "name": "Subhan Farooq",
+    "fatherName": "Muhammad Farooq",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 64, "total": 75 },
+      { "name": "Urdu", "marks": 68, "total": 75 },
+      { "name": "Mathematics", "marks": 44, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Art & Craft", "marks": 20, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0060",
+    "name": "Shahzain Haider",
+    "fatherName": "Ijaaz Ahmed",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 66, "total": 75 },
+      { "name": "Urdu", "marks": 66, "total": 75 },
+      { "name": "Mathematics", "marks": 45, "total": 50 },
+      { "name": "G.K & M.T", "marks": 22, "total": 25 },
+      { "name": "Art & Craft", "marks": 21, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0063",
+    "name": "Subhan Imran",
+    "fatherName": "Muhammad Imran",
+    "class": "Reception",
+    "subjects": [
+      { "name": "English", "marks": 60, "total": 75 },
+      { "name": "Urdu", "marks": 62, "total": 75 },
+      { "name": "Mathematics", "marks": 42, "total": 50 },
+      { "name": "G.K & M.T", "marks": 20, "total": 25 },
+      { "name": "Art & Craft", "marks": 21, "total": 25 },
+      { "name": "Summer Task", "marks": 20, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0033",
+    "name": "Muhammad Shahwaiz",
+    "fatherName": "Muneer Ahmed",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 65, "total": 75 },
+      { "name": "Urdu", "marks": 68, "total": 75 },
+      { "name": "Mathematics", "marks": 42, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0004",
+    "name": "Muhammad Umar",
+    "fatherName": "Munawer Iqbal",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 71, "total": 75 },
+      { "name": "Urdu", "marks": 63, "total": 75 },
+      { "name": "Mathematics", "marks": 42, "total": 50 },
+      { "name": "G.K & M.T", "marks": 24, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0014",
+    "name": "Muhammad Hashim",
+    "fatherName": "Baber Riaz",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 63, "total": 75 },
+      { "name": "Urdu", "marks": 67, "total": 75 },
+      { "name": "Mathematics", "marks": 40, "total": 50 },
+      { "name": "G.K & M.T", "marks": 23, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 0, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0027",
+    "name": "Anas Tanveer",
+    "fatherName": "Muhammad Tanveer Butt",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 71, "total": 75 },
+      { "name": "Urdu", "marks": 70, "total": 75 },
+      { "name": "Mathematics", "marks": 43, "total": 50 },
+      { "name": "G.K & M.T", "marks": 24, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0039",
+    "name": "Tehreem Fatima",
+    "fatherName": "Qamar Abbas",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 62, "total": 75 },
+      { "name": "Urdu", "marks": 68, "total": 75 },
+      { "name": "Mathematics", "marks": 36, "total": 50 },
+      { "name": "G.K & M.T", "marks": 20, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 23, "total": 25 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0019",
+    "name": "Ameer Hamza",
+    "fatherName": "Muhammad Mansha",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 50, "total": 75 },
+      { "name": "Urdu", "marks": 53, "total": 75 },
+      { "name": "Mathematics", "marks": 33, "total": 50 },
+      { "name": "G.K & M.T", "marks": 0, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 20, "total": 25 },
+      { "name": "Summer Task", "marks": 20, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0045",
+    "name": "Eshaan Javed",
+    "fatherName": "Javed Iqbal",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 66, "total": 75 },
+      { "name": "Urdu", "marks": 69, "total": 75 },
+      { "name": "Mathematics", "marks": 45, "total": 50 },
+      { "name": "G.K & M.T", "marks": 24, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0054",
+    "name": "Areej Fatima",
+    "fatherName": "Mohammad Akhtar",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 65, "total": 75 },
+      { "name": "Urdu", "marks": 67, "total": 75 },
+      { "name": "Mathematics", "marks": 41, "total": 50 },
+      { "name": "G.K & M.T", "marks": 23, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0065",
+    "name": "Fahad Rasool",
+    "fatherName": "Sajid Mahmood",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 69, "total": 75 },
+      { "name": "Urdu", "marks": 74, "total": 75 },
+      { "name": "Mathematics", "marks": 38, "total": 50 },
+      { "name": "G.K & M.T", "marks": 25, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0011",
+    "name": "Muhammad Ahmad",
+    "fatherName": "Burger Tahir",
+    "class": "Prep",
+    "subjects": [
+      { "name": "English", "marks": 58, "total": 75 },
+      { "name": "Urdu", "marks": 67, "total": 75 },
+      { "name": "Mathematics", "marks": 40, "total": 50 },
+      { "name": "G.K & M.T", "marks": 20, "total": 25 },
+      { "name": "Tarjuma Al Quran", "marks": 22, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  
+
