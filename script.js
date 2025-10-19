@@ -1,3 +1,4 @@
+
 document.getElementById("resultForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -7,7 +8,6 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
   fetch('https://raw.githubusercontent.com/toppereducation/Exams-results/main/students.json')
     .then(response => response.json())
     .then(data => {
-      // Find student by admission ID
       const student = data.find(std => std.admissionId === admissionId);
 
       if (student) {
@@ -29,6 +29,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           else if (percentage >= 40) grade = "E";
           else grade = "F";
 
+          // ✅ Pass for A+ to E, Fail for F
           const remark = (grade === "F") ? "Fail" : "Pass";
 
           subjectsHTML += `
@@ -79,8 +80,6 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           <p><strong>Overall Grade:</strong> ${overallGrade}</p>
           <p><strong>Remarks:</strong> ${remarks}</p>
         `;
-
-
       } else {
         resultDiv.innerHTML = `<p style="color:red;">Result not found for Admission ID ${admissionId}</p>`;
       }
@@ -89,6 +88,6 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       console.error("Error loading student data:", error);
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
-});
+}); 
 
 
