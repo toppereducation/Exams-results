@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background: 
-  linear-gradient(45deg, cyan, transparent),
+  linear-gradient(45deg, yellow, transparent),
   linear-gradient(45deg, yellow, transparent),
   linear-gradient(45deg, darkblue, black);
 background-blend-mode: multiply;
@@ -66,6 +66,7 @@ button:hover {
 }
 
 table {
+  color: white;
   width: 99%;
   border-collapse: collapse;
   margin-top: 15px;
@@ -81,6 +82,7 @@ th, td {
   padding: 10px;
   text-align: center;
 }
+
 
 
 
