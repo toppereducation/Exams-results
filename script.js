@@ -79,28 +79,24 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           <p><strong>Remarks:</strong> ${remarks}</p>
         `;
 
-        // 🎉 Fireworks and Congrats for Topper
-        if (student.name === "Manahil Fatima") {
-          resultDiv.innerHTML += `
-            <div id="congrats" style="font-size: 2em; color: green; margin-top: 20px;">
-              🎉 Congratulations ${student.name}! You are the Topper! 🎉
-            </div>
-          `;
+        // Trigger fireworks only for Manahil Fatima (case-insensitive)
+if (student.name.trim().toLowerCase() === "manahil fatima") {
+  const container = document.querySelector('.container');
+  const fireworks = new Fireworks(container, { 
+    speed: 3, 
+    acceleration: 1.05, 
+    friction: 0.97, 
+    gravity: 1.5, 
+    particles: 50, 
+    trace: 3, 
+    explosion: 5
+  });
+  fireworks.start();
 
-          const container = document.body;
-          const fireworks = new Fireworks(container, { 
-            rocketsPoint: 50,
-            speed: 3,
-            acceleration: 1.05,
-            friction: 0.95,
-            gravity: 1.5,
-            particles: 100,
-            trace: 3,
-            explosion: 5
-          });
-          fireworks.start();
-          setTimeout(() => fireworks.stop(), 10000); // Stop after 10 seconds
-        }
+  // Stop fireworks after 10 seconds
+  setTimeout(() => fireworks.stop(), 10000);
+}
+
 
       } else {
         resultDiv.innerHTML = `<p style="color:red;">Result not found for Admission ID ${admissionId}</p>`;
@@ -111,3 +107,4 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
       resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
     });
 });
+
