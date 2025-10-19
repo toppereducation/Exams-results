@@ -478,7 +478,7 @@
   {
     "admissionId": "0011",
     "name": "Muhammad Ahmad",
-    "fatherName": "Burger Tahir",
+    "fatherName": "Barjees Tahir",
     "class": "Prep",
     "subjects": [
       { "name": "English", "marks": 58, "total": 75 },
@@ -489,5 +489,397 @@
       { "name": "Summer Task", "marks": 22, "total": 25 }
     ]
   },
+  {
+    "admissionId": "0040",
+    "name": "Muhammad Aown",
+    "fatherName": "Muhammad Arshad",
+    "class": "One",
+    "subjects": [
+      { "name": "English", "marks": 48, "total": 50 },
+      { "name": "Urdu", "marks": 50, "total": 50 },
+      { "name": "Mathematics", "marks": 50, "total": 50 },
+      { "name": "Science", "marks": 39, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 23, "total": 25 },
+      { "name": "Islamiat", "marks": 50, "total": 50 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0052",
+    "name": "Muhammad Tabish",
+    "fatherName": "Muhammad Akhtar",
+    "class": "One",
+    "subjects": [
+      { "name": "English", "marks": 50, "total": 50 },
+      { "name": "Urdu", "marks": 46, "total": 50 },
+      { "name": "Mathematics", "marks": 47, "total": 50 },
+      { "name": "Science", "marks": 48, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 22, "total": 25 },
+      { "name": "Islamiat", "marks": 50, "total": 50 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0025",
+    "name": "Hanzala Tariq",
+    "fatherName": "Tariq Mahmood",
+    "class": "One",
+    "subjects": [
+      { "name": "English", "marks": 31, "total": 50 },
+      { "name": "Urdu", "marks": 43, "total": 50 },
+      { "name": "Mathematics", "marks": 48, "total": 50 },
+      { "name": "Science", "marks": 40, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 20, "total": 25 },
+      { "name": "Islamiat", "marks": 48, "total": 50 },
+      { "name": "Summer Task", "marks": 20, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0028",
+    "name": "Anaya Fatima",
+    "fatherName": "Dilawar Butt",
+    "class": "Two",
+    "subjects": [
+      { "name": "English", "marks": 41, "total": 50 },
+      { "name": "Urdu", "marks": 47, "total": 50 },
+      { "name": "Mathematics", "marks": 50, "total": 50 },
+      { "name": "Science", "marks": 47, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Islamiat", "marks": 48, "total": 50 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0018",
+    "name": "Meerab Fatima",
+    "fatherName": "Muhammad Mansha",
+    "class": "Two",
+    "subjects": [
+      { "name": "English", "marks": 33, "total": 50 },
+      { "name": "Urdu", "marks": 44, "total": 50 },
+      { "name": "Mathematics", "marks": 48, "total": 50 },
+      { "name": "Science", "marks": 44, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 0, "total": 25 },
+      { "name": "Islamiat", "marks": 38, "total": 50 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0057",
+    "name": "Muhammad Faizan Wasiq",
+    "fatherName": "Muhammad Wasiq",
+    "class": "Two",
+    "subjects": [
+      { "name": "English", "marks": 44, "total": 50 },
+      { "name": "Urdu", "marks": 41, "total": 50 },
+      { "name": "Mathematics", "marks": 50, "total": 50 },
+      { "name": "Science", "marks": 48, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Islamiat", "marks": 48, "total": 50 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0024",
+    "name": "Momina Zahra",
+    "fatherName": "Fiaz Ahmad",
+    "class": "Three",
+    "subjects": [
+      { "name": "English", "marks": 25, "total": 75 },
+      { "name": "Urdu", "marks": 45, "total": 75 },
+      { "name": "Mathematics", "marks": 22, "total": 50 },
+      { "name": "Science", "marks": 28, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 16, "total": 25 },
+      { "name": "Islamiat", "marks": 39, "total": 50 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0041",
+    "name": "Maheen Fatima",
+    "fatherName": "Muhammad Iqbal",
+    "class": "Three",
+    "subjects": [
+      { "name": "English", "marks": 27, "total": 75 },
+      { "name": "Urdu", "marks": 51, "total": 75 },
+      { "name": "Mathematics", "marks": 33, "total": 50 },
+      { "name": "Science", "marks": 33, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 21, "total": 25 },
+      { "name": "Islamiat", "marks": 44, "total": 50 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0022",
+    "name": "Ahmad Hassan",
+    "fatherName": "Fiaz Ahmad",
+    "class": "Three",
+    "subjects": [
+      { "name": "English", "marks": 26, "total": 75 },
+      { "name": "Urdu", "marks": 42, "total": 75 },
+      { "name": "Mathematics", "marks": 36, "total": 50 },
+      { "name": "Science", "marks": 32, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 15, "total": 25 },
+      { "name": "Islamiat", "marks": 39, "total": 50 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0015",
+    "name": "Dua Zainab",
+    "fatherName": "Ali Raza",
+    "class": "Three",
+    "subjects": [
+      { "name": "English", "marks": 25, "total": 75 },
+      { "name": "Urdu", "marks": 51, "total": 75 },
+      { "name": "Mathematics", "marks": 31, "total": 50 },
+      { "name": "Science", "marks": 36, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 17, "total": 25 },
+      { "name": "Islamiat", "marks": 45, "total": 50 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0010",
+    "name": "Muhammad Ayaan",
+    "fatherName": "Arsalan Ahmad",
+    "class": "Four",
+    "subjects": [
+      { "name": "English", "marks": 35, "total": 75 },
+      { "name": "Urdu", "marks": 41, "total": 75 },
+      { "name": "Mathematics", "marks": 47, "total": 75 },
+      { "name": "Science", "marks": 38, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Islamiat", "marks": 36, "total": 75 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0066",
+    "name": "Ali Asghar",
+    "fatherName": "Faiz Ahmad",
+    "class": "Four",
+    "subjects": [
+      { "name": "English", "marks": 30, "total": 75 },
+      { "name": "Urdu", "marks": 36, "total": 75 },
+      { "name": "Mathematics", "marks": 52, "total": 75 },
+      { "name": "Science", "marks": 35, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 22, "total": 25 },
+      { "name": "Islamiat", "marks": 29, "total": 75 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0032",
+    "name": "Manahil Fatima",
+    "fatherName": "Shahzad Naseem",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 75, "total": 75 },
+      { "name": "Urdu", "marks": 69, "total": 75 },
+      { "name": "Mathematics", "marks": 72, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Science", "marks": 67, "total": 75 },
+      { "name": "Islamiat", "marks": 75, "total": 75 },
+      { "name": "Summer Task", "marks": 24, "total": 25 }
+    ]
+  },
+ {
+    "admissionId": "00",
+    "name": "",
+    "fatherName": "",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": , "total": 75 },
+      { "name": "Urdu", "marks": , "total": 75 },
+      { "name": "Mathematics", "marks": , "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": , "total": 25 },
+      { "name": "Science", "marks": , "total": 75 },
+      { "name": "Islamiat", "marks": , "total": 75 },
+      { "name": "Summer Task", "marks": , "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0048",
+    "name": "Adan Fatima",
+    "fatherName": "Amjad Javed",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 64, "total": 75 },
+      { "name": "Urdu", "marks": 54, "total": 75 },
+      { "name": "Mathematics", "marks": 49, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Science", "marks": 39, "total": 75 },
+      { "name": "Islamiat", "marks": 54, "total": 75 },
+      { "name": "Summer Task", "marks": 19, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0047",
+    "name": "Laraib Noor",
+    "fatherName": "Javed Iqbal",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 69, "total": 75 },
+      { "name": "Urdu", "marks": 60, "total": 75 },
+      { "name": "Mathematics", "marks": 44, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Science", "marks": 41, "total": 75 },
+      { "name": "Islamiat", "marks": 61, "total": 75 },
+      { "name": "Summer Task", "marks": 19, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0064",
+    "name": "Muntaha Sajid",
+    "fatherName": "Sajid Mahmood",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 73, "total": 75 },
+      { "name": "Urdu", "marks": 62, "total": 75 },
+      { "name": "Mathematics", "marks": 45, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Science", "marks": 35, "total": 75 },
+      { "name": "Islamiat", "marks": 62, "total": 75 },
+      { "name": "Summer Task", "marks": 9, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0026",
+    "name": "Ahsan Tanveer",
+    "fatherName": "Tanveer Butt",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 68, "total": 75 },
+      { "name": "Urdu", "marks": 62, "total": 75 },
+      { "name": "Mathematics", "marks": 58, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 25, "total": 25 },
+      { "name": "Science", "marks": 34, "total": 75 },
+      { "name": "Islamiat", "marks": 58, "total": 75 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0023",
+    "name": "Faizan Shahid",
+    "fatherName": "Shahid Imran",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 58, "total": 75 },
+      { "name": "Urdu", "marks": 48, "total": 75 },
+      { "name": "Mathematics", "marks": 59, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 23, "total": 25 },
+      { "name": "Science", "marks": 47, "total": 75 },
+      { "name": "Islamiat", "marks": 55, "total": 75 },
+      { "name": "Summer Task", "marks": 20, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0073",
+    "name": "Muhammad Wahab",
+    "fatherName": "Sajid Ali",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 31, "total": 75 },
+      { "name": "Urdu", "marks": 43, "total": 75 },
+      { "name": "Mathematics", "marks": 44, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 24, "total": 25 },
+      { "name": "Science", "marks": 30, "total": 75 },
+      { "name": "Islamiat", "marks": 46, "total": 75 },
+      { "name": "Summer Task", "marks": 7, "total": 25 }
+    ]
+  },
+   {
+    "admissionId": "0069",
+    "name": "Hadi Ahmad",
+    "fatherName": "Nasir Ali",
+    "class": "Five",
+    "subjects": [
+      { "name": "English", "marks": 32, "total": 75 },
+      { "name": "Urdu", "marks": 35, "total": 75 },
+      { "name": "Mathematics", "marks": 37, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 23, "total": 25 },
+      { "name": "Science", "marks": 31, "total": 75 },
+      { "name": "Islamiat", "marks": 48, "total": 75 },
+      { "name": "Summer Task", "marks": 7, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0031",
+    "name": "Haseeb Haider",
+    "fatherName": "Shahzad Naseem",
+    "class": "Seven",
+    "subjects": [
+      { "name": "English", "marks": 64, "total": 75 },
+      { "name": "Urdu", "marks": 73, "total": 75 },
+      { "name": "Mathematics", "marks": 71, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 68, "total": 75 },
+      { "name": "Science", "marks": 63, "total": 75 },
+      { "name": "Islamiat", "marks": 66, "total": 75 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0016",
+    "name": "Aiman Shehzadi",
+    "fatherName": "Ali Raza",
+    "class": "Seven",
+    "subjects": [
+      { "name": "English", "marks": 75, "total": 75 },
+      { "name": "Urdu", "marks": 73, "total": 75 },
+      { "name": "Mathematics", "marks": 63, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 66, "total": 75 },
+      { "name": "Science", "marks": 50, "total": 75 },
+      { "name": "Islamiat", "marks": 67, "total": 75 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0021",
+    "name": "Shahzaib Hassan",
+    "fatherName": "Khadam Hussein",
+    "class": "Seven",
+    "subjects": [
+      { "name": "English", "marks": 41, "total": 75 },
+      { "name": "Urdu", "marks": 63, "total": 75 },
+      { "name": "Mathematics", "marks": 57, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 61, "total": 75 },
+      { "name": "Science", "marks": 50, "total": 75 },
+      { "name": "Islamiat", "marks": 52, "total": 75 },
+      { "name": "Summer Task", "marks": 18, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0037",
+    "name": "Sami Ul Hassan",
+    "fatherName": "Zahoor Ahmad",
+    "class": "Seven",
+    "subjects": [
+      { "name": "English", "marks": 34, "total": 75 },
+      { "name": "Urdu", "marks": 49, "total": 75 },
+      { "name": "Mathematics", "marks": 41, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 58, "total": 75 },
+      { "name": "Science", "marks": 40, "total": 75 },
+      { "name": "Islamiat", "marks": 48, "total": 75 },
+      { "name": "Summer Task", "marks": 7, "total": 25 }
+    ]
+  },
+  {
+    "admissionId": "0001",
+    "name": "Shanawer Bibi",
+    "fatherName": "Rasheed Ahmad",
+    "class": "Seven",
+    "subjects": [
+      { "name": "English", "marks": 61, "total": 75 },
+      { "name": "Urdu", "marks": 75, "total": 75 },
+      { "name": "Mathematics", "marks": 70, "total": 75 },
+      { "name": "Tarjuma Al Quran", "marks": 75, "total": 75 },
+      { "name": "Science", "marks": 75, "total": 75 },
+      { "name": "Islamiat", "marks": 73, "total": 75 },
+      { "name": "Summer Task", "marks": 19, "total": 25 }
+    ]
+  }
+]
+  
   
 
