@@ -1,6 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f1c40f, #3498db);
+  background: 
+  linear-gradient(45deg, cyan, transparent),
+  linear-gradient(45deg, yellow, transparent),
+  linear-gradient(45deg, darkblue, black);
+background-blend-mode: multiply;
+
   margin: 0;
   padding: 0;
   text-align: center;
@@ -76,6 +81,7 @@ th, td {
   padding: 10px;
   text-align: center;
 }
+
 
 
 
