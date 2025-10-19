@@ -79,32 +79,7 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
           <p><strong>Remarks:</strong> ${remarks}</p>
         `;
 
-        // Trigger fireworks only for Manahil Fatima (case-insensitive)
-if (student.name.trim().toLowerCase() === "manahil fatima") {
-  const container = document.querySelector('.container');
-  const fireworks = new Fireworks(container, { 
-    speed: 3, 
-    acceleration: 1.05, 
-    friction: 0.97, 
-    gravity: 1.5, 
-    particles: 50, 
-    trace: 3, 
-    explosion: 5
-  });
-  fireworks.start();
-
-  // Stop fireworks after 10 seconds
-  setTimeout(() => fireworks.stop(), 10000);
-}
-
-
-      } else {
-        resultDiv.innerHTML = `<p style="color:red;">Result not found for Admission ID ${admissionId}</p>`;
-      }
-    })
-    .catch(error => {
-      console.error("Error loading student data:", error);
-      resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
-    });
-});
-
+        // Trigger fireworks only for Manahil Fatima (robust check)
+        if (student.name.toLowerCase().replace(/\s+/g, ' ').trim() === "manahil fatima") {
+          const container = document.body; // better for full screen fireworks
+          const fireworks =
