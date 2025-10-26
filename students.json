@@ -28,6 +28,20 @@
     ]
   },
   {
+    "admissionId": "0078",
+    "name": "Muhammad Huzaifa",
+    "fatherName": "Musanaf Abbas",
+    "class": "Foundation",
+    "subjects": [
+      { "name": "English", "marks": 65, "total": 75 },
+      { "name": "Urdu", "marks": 61, "total": 75 },
+      { "name": "Mathematics", "marks": 43, "total": 50 },
+      { "name": "G.K & M.T", "marks": 22, "total": 25 },
+      { "name": "Art & Craft", "marks": 20, "total": 25 },
+      { "name": "Summer Task", "marks": 22, "total": 25 }
+    ]
+  },
+  {
     "admissionId": "0012",
     "name": "Muhammad Saad",
     "fatherName": "Barjees Tahir",
@@ -535,6 +549,21 @@
     ]
   },
   {
+    "admissionId": "0077",
+    "name": "Sajal Fatima",
+    "fatherName": "Musanaf Abbas",
+    "class": "One",
+    "subjects": [
+      { "name": "English", "marks": 34, "total": 50 },
+      { "name": "Urdu", "marks": 36, "total": 50 },
+      { "name": "Mathematics", "marks": 46, "total": 50 },
+      { "name": "Science", "marks": 34, "total": 50 },
+      { "name": "Tarjuma Al Quran", "marks": 17, "total": 25 },
+      { "name": "Islamiat", "marks": 45, "total": 50 },
+      { "name": "Summer Task", "marks": 23, "total": 25 }
+    ]
+  },
+  {
     "admissionId": "0028",
     "name": "Anaya Fatima",
     "fatherName": "Dilawar Butt",
@@ -867,6 +896,7 @@
 ]
   
   
+
 
 
 
