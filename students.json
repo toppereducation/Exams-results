@@ -801,7 +801,7 @@
       { "name": "Tarjuma Al Quran", "marks": 68, "total": 75 },
       { "name": "Science", "marks": 63, "total": 75 },
       { "name": "Islamiat", "marks": 66, "total": 75 },
-      { "name": "Summer Task", "marks": 22, "total": 25 }
+      { "name": "Summer Task", "marks": 25, "total": 25 }
     ]
   },
   {
@@ -856,16 +856,17 @@
     "class": "Seven",
     "subjects": [
       { "name": "English", "marks": 61, "total": 75 },
-      { "name": "Urdu", "marks": 75, "total": 75 },
+      { "name": "Urdu", "marks": 70, "total": 75 },
       { "name": "Mathematics", "marks": 70, "total": 75 },
       { "name": "Tarjuma Al Quran", "marks": 75, "total": 75 },
-      { "name": "Science", "marks": 75, "total": 75 },
+      { "name": "Science", "marks": 67, "total": 75 },
       { "name": "Islamiat", "marks": 73, "total": 75 },
-      { "name": "Summer Task", "marks": 19, "total": 25 }
+      { "name": "Summer Task", "marks": 25, "total": 25 }
     ]
   }
 ]
   
   
+
 
 
