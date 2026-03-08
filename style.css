@@ -21,8 +21,13 @@ background-blend-mode: multiply;
   margin-bottom: 15px;
 }
 
-h1, h2, h3 {
+h1, h2 {
   color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 5px 0;
+}
+h3 {
+  color: red;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   margin: 5px 0;
 }
@@ -82,6 +87,7 @@ th, td {
   padding: 10px;
   text-align: center;
 }
+
 
 
 
