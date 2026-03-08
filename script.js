@@ -86,8 +86,9 @@ document.getElementById("resultForm").addEventListener("submit", function (e) {
     })
     .catch(error => {
       console.error("Error loading student data:", error);
-      resultDiv.innerHTML = "<p style='color:red;'>Error loading data. Please try again later.</p>";
+      resultDiv.innerHTML = "<p style='color:red;'>Results not Available yet!. Please try again later.</p>";
     });
 }); 
+
 
 
